@@ -1,0 +1,17 @@
+[project]
+name = "speech-buddy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastcore>=1.8.13",
+    "faster-whisper>=1.2.0",
+    "numpy>=2.3.4",
+    "pyperclip>=1.11.0",
+    "requests>=2.32.5",
+    "sounddevice>=0.5.3",
+]
+
+[project.scripts]
+speech-buddy = "main:main"

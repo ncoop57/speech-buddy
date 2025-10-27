@@ -55,9 +55,12 @@ def stop():
     os.kill(pid, signal.SIGUSR1)
     print("Stopped.")
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("action", choices=["start", "stop"])
     args = parser.parse_args()
     
     start() if args.action == "start" else stop()
+
+if __name__ == "__main__":
+    main()
